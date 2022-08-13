@@ -1,0 +1,1492 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:gainsboro;
+    overflow-x: hidden;
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: whitesmoke;
+        overflow-x: hidden;
+    }
+    
+    /* Header */
+
+    header{
+        margin-bottom: 3.5rem;
+    }
+
+    header > div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+    }
+    
+    header img, svg{
+        width: 5rem;
+        height: 3rem;
+    }
+    
+    header .logo{
+        display: flex;
+        align-items: center;
+        color: red;
+        padding: 1rem 0;
+    }
+    
+    /* Principal */
+    
+    header .principal{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 19rem;
+    }
+    
+    header .principal > div{
+        display: block;
+        margin: auto;
+        background-color:white;
+        width: 100%;
+    }
+    
+    header .principal nav{
+        display: flex;
+        justify-content:left;
+        align-items: center;
+        flex-direction: row;
+        color: white;
+        background-color: black;
+        margin: 0;
+        font-size: 1.6rem;
+    }
+    
+    header .principal a{
+        color: white;
+        background-color: black;
+        padding: 0.8rem 3rem;
+    }
+    
+    header .principal a:hover{
+        background-color: red;
+    }
+    
+    header .principal h2{
+        padding: 1rem;
+        font-size: 2rem;
+        margin: 0.5rem 0;
+    }
+
+    header .formulario{
+        width: 100%;
+    }
+    
+    header .formulario section{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 1rem;
+        font-size: 1.3rem;
+    }
+    
+    header .formulario .inputs{
+        padding: 0.5rem 2rem;
+        width: 80vw;
+        border: .1rem solid lightgray;
+    }
+    
+    header .formulario button{
+        display: block;
+        margin: 1.6rem 1rem;
+        padding: 0.8rem;
+        color: white;
+        background-color: gray;
+        border: none;
+    }
+    
+    /* Main */
+    
+    main{
+        display: block;
+        margin: 0 auto;
+        width: 100vw;
+    }
+    
+    
+    /* Segunda */
+    main .mid{
+        display: block;
+        margin: 0 auto;
+        width: 70rem;
+    }
+    
+    main .segunda{
+        display: block;
+        margin: 0 auto;
+        width: 100rem;
+        background-color: whitesmoke;
+    }
+    
+    main .segunda > h2{
+        font-size: 2rem;
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+        margin-left: 2.5rem;
+    }
+    
+    main .segunda > p{
+        padding-bottom: 0.4rem;
+        font-size: 1.3rem;
+        margin-left: 2.5rem;
+    }
+    
+    main .segunda span{
+        font-weight: bolder;
+        font-size: 1.3rem;
+        color: black;
+    }
+    
+    main .segunda .imagens{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+    }
+    
+    main .segunda .imagens p{
+        color: white;
+        font-size: 1.4rem;
+        position: relative;
+        top: 90%;
+        left: 40%;
+    }
+    
+    main .segunda .img1{
+        background: black url("imagens/cinqueterre.jpg") no-repeat center/cover;
+        height: 20rem;
+        width: 45rem;
+        margin-bottom: 1rem;
+    }
+    
+    main .segunda .container-imagem{
+        display: block;
+        margin: auto;
+    }
+    
+    main .segunda .container-imagem div{
+        display: block;
+        margin-bottom: 1rem;
+    }
+    
+    main .segunda .img2{
+        background: black url("imagens/newyork.jpg") no-repeat center/cover;
+        height: 20rem;
+        width: 45rem;
+    }
+    
+    main .segunda .img3{
+        background: black url("imagens/sanfran.jpg") no-repeat center/cover;
+        height: 20rem;
+        width: 45rem;
+    }
+    
+    main .segunda .img4{
+        background: black url("imagens/pisa.jpg") no-repeat center/cover;
+        height: 20rem;
+        width: 45rem;
+    }
+    
+    main .segunda .img5{
+        background: black url("imagens/paris.jpg") no-repeat center/cover;
+        height: 20rem;
+        width: 45rem;
+    }
+    
+    /* Terceira */
+    
+    main .terceira{
+        display: block;
+        margin: 0 auto;
+        width: 100vw;
+        background-color: whitesmoke;
+    }
+
+    main .terceira > h2{
+        font-size: 1.6rem;
+        padding: 2rem 0;
+        margin-left: 3rem;
+    }
+
+    main .terceira h2{
+        font-size: 1.6rem;
+        padding: 1rem 0;
+    }
+    
+    main .terceira > p{
+        padding-bottom: 1rem;
+        font-size: 1.3rem;
+        padding: 1rem;
+        margin-left: 2rem;
+    }
+
+    main .terceira p{
+        padding-bottom: 1rem;
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+    
+    main .terceira > div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    main .terceira img{
+        width: 45rem;
+    }
+    
+    main .terceira .ocean, .mountain{
+        background-color: white;
+        margin-bottom: 3rem;
+    }
+    
+    main .terceira > div h2{
+        padding-left: 1rem;
+    }
+    
+    main .terceira > div p {
+        padding-left: 1rem;
+    }
+    
+    
+    main .terceira .indent{
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    /* quarta */
+    
+    main .quarta{
+        display: block;
+        margin: 0 auto;
+        background-color: gray;
+        color: white;
+        height: 20rem;
+        width: 45rem;
+    }
+    
+    main .quarta h1{
+        padding: 2rem 0;
+        padding-left: 1rem;
+        font-size: 2rem;
+    }
+    
+    main .quarta > p{
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+    }
+    
+    main .quarta form{
+        padding: 0 1rem;
+    }
+    
+    main .quarta input{
+        width: 92%;
+        padding: 1rem .3rem;
+        margin-bottom: 1rem;
+        border: .1rem solid lightgray;
+    }
+    
+    main .quarta button{
+        background-color: red;
+        border: none;
+        color: white;
+        padding: 1rem 2rem;
+    }
+    
+    main .quarta button:hover{
+        background-color: rgba(255, 0, 0, 0.507);
+    }
+    
+    /* quinta */
+    
+    main .quinta{
+        display: block;
+        margin: 0 auto;
+        width: 45rem;
+        background-color: whitesmoke;
+        padding: 2rem 3rem;
+
+    }
+    
+    main .quinta svg{
+        width: 3rem;
+        height: 1.5rem;
+    }
+    
+    main .quinta h2{
+        padding: 2rem 0;
+        font-size: 2.5rem;
+    }
+    
+    main .quinta p{
+        padding-bottom: 1.5rem;
+        font-size: 1.2rem;
+    }
+    
+    main .quinta div{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    
+    main .quinta input{
+        display: block;
+        width: 95%;
+        padding: 1rem 1rem;
+        border: .1rem solid lightgray;
+        margin-bottom: 1rem;
+    }
+    
+    main .quinta button{
+        display: block;
+        padding: 0.8rem;
+        color: white;
+        background-color: black;
+        border: none;
+    }
+    
+    /* Footer */
+    
+    footer{
+        text-align: center;
+    }
+    
+    footer h3{
+        padding: 2rem 0;
+    }
+    
+    footer div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: .5rem;
+        margin-bottom: 1rem;
+    }
+    
+    footer svg{
+        height: 2rem;
+        width: 2rem;
+    }
+    
+    footer p{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 768px) {
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:whitesmoke;
+        overflow-x: hidden;
+    }
+    
+    /* Header */
+
+    header{
+        margin-bottom: 3.5rem;
+    }
+
+    header > div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+    }
+    
+    header img, svg{
+        width: 5rem;
+        height: 3rem;
+    }
+    
+    header .logo{
+        display: flex;
+        align-items: center;
+        color: red;
+        padding: 1rem 0;
+    }
+    
+    /* Principal */
+    
+    header .principal{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 19rem;
+    }
+    
+    header .principal > div{
+        display: block;
+        margin: auto;
+        background-color:white;
+        width: 100%;
+    }
+    
+    header .principal nav{
+        display: flex;
+        justify-content:left;
+        align-items: center;
+        flex-direction: row;
+        background-color: black;
+        color: white;
+        margin: 0;
+        font-size: 1.6rem;
+    }
+    
+    header .principal a{
+        color: white;
+        background-color: black;
+        padding: 0.8rem 3rem;
+    }
+    
+    header .principal a:hover{
+        background-color: red;
+    }
+    
+    header .principal h2{
+        padding: 1rem;
+        font-size: 1.8rem;
+        margin: 0.5rem 0;
+    }
+
+    header .formulario{
+        width: 100%;
+    }
+    
+    header .formulario section{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 1rem;
+        font-size: 1.3rem;
+    }
+    
+    header .formulario .inputs{
+        padding: 0.5rem 2rem;
+        width: 80vw;
+        border: .1rem solid lightgray;
+    }
+    
+    header .formulario button{
+        display: block;
+        margin: 1.6rem 1rem;
+        padding: 0.8rem;
+        color: white;
+        background-color: gray;
+        border: none;
+    }
+    
+    /* Main */
+    
+    main{
+        display: block;
+        margin: 0 auto;
+        width: 100vw;
+    }
+    
+    
+    /* Segunda */
+    main .mid{
+        display: block;
+        margin: 0 auto;
+        width: 70rem;
+    }
+    
+    main .segunda{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: start;
+        background-color: whitesmoke;
+    }
+    
+    main .segunda > h2{
+        font-size: 2rem;
+        padding-top: 5rem;
+        text-align: start;
+        margin-left: -23rem;
+        padding-bottom: 1rem;
+    }
+    
+    main .segunda > p{
+        text-align: start;
+        margin-left: -33rem;
+        padding-bottom: 0.4rem;
+        font-size: 1.3rem;
+    }
+    
+    main .segunda span{
+        font-weight: bolder;
+        font-size: 1.3rem;
+        color: black;
+    }
+    
+    main .segunda .imagens{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+    }
+    
+    main .segunda .imagens p{
+        color: white;
+        font-size: 1.4rem;
+        position: relative;
+        top: 90%;
+        left: 40%;
+    }
+    
+    main .segunda .img1{
+        background: black url("imagens/cinqueterre.jpg") no-repeat center/cover;
+        height: 20rem;
+        width: 45rem;
+        margin-bottom: 1rem;
+    }
+    
+    main .segunda .container-imagem{
+        display: block;
+        margin: auto;
+    }
+    
+    main .segunda .container-imagem div{
+        display: block;
+        margin-bottom: 1rem;
+    }
+    
+    main .segunda .img2{
+        background: black url("imagens/newyork.jpg") no-repeat center/cover;
+        height: 20rem;
+        width: 45rem;
+    }
+    
+    main .segunda .img3{
+        background: black url("imagens/sanfran.jpg") no-repeat center/cover;
+        height: 20rem;
+        width: 45rem;
+    }
+    
+    main .segunda .img4{
+        background: black url("imagens/pisa.jpg") no-repeat center/cover;
+        height: 20rem;
+        width: 45rem;
+    }
+    
+    main .segunda .img5{
+        background: black url("imagens/paris.jpg") no-repeat center/cover;
+        height: 20rem;
+        width: 45rem;
+    }
+    
+    /* Terceira */
+    
+    main .terceira{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: start;
+        background-color: whitesmoke;
+    }
+
+    main .terceira > h2{
+        font-size: 1.6rem;
+        padding: 2rem 0;
+        text-align: start;
+        margin-left: -33rem;
+    }
+
+    main .terceira h2{
+        font-size: 1.6rem;
+        padding: 1rem 0;
+    }
+    
+    main .terceira > p{
+        padding-bottom: 1rem;
+        font-size: 1.3rem;
+        padding: 1rem;
+        margin-left: -21rem;
+    }
+
+    main .terceira p{
+        padding-bottom: 1rem;
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+    
+    main .terceira > div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    main .terceira img{
+        width: 45rem;
+    }
+    
+    main .terceira .ocean, .mountain{
+        background-color: white;
+        margin-bottom: 3rem;
+    }
+    
+    main .terceira > div h2{
+        padding-left: 1rem;
+    }
+    
+    main .terceira > div p {
+        padding-left: 1rem;
+    }
+    
+    
+    main .terceira .indent{
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    /* quarta */
+    
+    main .quarta{
+        display: block;
+        margin: 0 auto;
+        background-color: gray;
+        color: white;
+        height: 20rem;
+        width: 45rem;
+    }
+    
+    main .quarta h1{
+        padding: 2rem 0;
+        padding-left: 1rem;
+        font-size: 2rem;
+    }
+    
+    main .quarta > p{
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+    }
+    
+    main .quarta form{
+        padding: 0 1rem;
+    }
+    
+    main .quarta input{
+        width: 92%;
+        padding: 1rem .3rem;
+        margin-bottom: 1rem;
+        border: .1rem solid lightgray;
+    }
+    
+    main .quarta button{
+        background-color: red;
+        border: none;
+        color: white;
+        padding: 1rem 2rem;
+    }
+    
+    main .quarta button:hover{
+        background-color: rgba(255, 0, 0, 0.507);
+    }
+    
+    /* quinta */
+    
+    main .quinta{
+        display: block;
+        margin: 0 auto;
+        width: 45rem;
+        background-color: whitesmoke;
+        padding: 2rem 3rem;
+
+    }
+    
+    main .quinta svg{
+        width: 3rem;
+        height: 1.5rem;
+    }
+    
+    main .quinta h2{
+        padding: 2rem 0;
+        font-size: 2.5rem;
+    }
+    
+    main .quinta p{
+        padding-bottom: 1.5rem;
+        font-size: 1.2rem;
+    }
+    
+    main .quinta div{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    
+    main .quinta input{
+        display: block;
+        width: 95%;
+        padding: 1rem 1rem;
+        border: .1rem solid lightgray;
+        margin-bottom: 1rem;
+    }
+    
+    main .quinta button{
+        display: block;
+        padding: 0.8rem;
+        color: white;
+        background-color: black;
+        border: none;
+    }
+    
+    /* Footer */
+    
+    footer{
+        text-align: center;
+    }
+    
+    footer h3{
+        padding: 2rem 0;
+    }
+    
+    footer div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: .5rem;
+        margin-bottom: 1rem;
+    }
+    
+    footer svg{
+        height: 2rem;
+        width: 2rem;
+    }
+    
+    footer p{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    /* Header */
+
+    header > div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+    }
+    
+    header img, svg{
+        width: 5rem;
+        height: 3rem;
+    }
+    
+    header .logo{
+        display: flex;
+        align-items: center;
+        color: red;
+        padding: 1rem 0;
+    }
+    
+    /* Principal */
+    
+    header .principal{
+        display: flex;
+        justify-content: center;
+        background: black url("imagens/london.jpg") no-repeat center/cover;
+        width: 100vw;
+        height: 70vh;
+    }
+    
+    header .principal > div{
+        display: block;
+        margin: auto;
+        background-color:white;
+        width: 39rem;
+    }
+    
+    header .principal nav{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        flex-direction: row;
+        color: white;
+        background-color: black;
+        margin: 0;
+        font-size: 1.6rem;
+    }
+    
+    header .principal a{
+        color: white;
+        background-color: black;
+        padding: 0.8rem 4.48rem;
+    }
+    
+    header .principal a:hover{
+        background-color: red;
+    }
+    
+    header .principal h2{
+        padding: 1rem;
+        font-size: 1.8rem;
+        margin: 0.5rem 0;
+    }
+    
+    header .formulario section{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 1rem;
+        font-size: 1.3rem;
+    }
+    
+    header .formulario .inputs{
+        padding: 0.5rem 2rem;
+        width: 13rem;
+        border: .1rem solid lightgray;
+    
+    }
+    
+    header .formulario button{
+        display: block;
+        margin: 1.6rem 1rem;
+        padding: 0.8rem;
+        color: white;
+        background-color: gray;
+        border: none;
+    }
+    
+    /* Main */
+    
+    main{
+        display: block;
+        margin: 0 auto;
+        width: 80rem;
+    }
+    
+    
+    /* Segunda */
+    
+    main .segunda, .mid{
+        display: block;
+        margin: 0 auto;
+        height: 50rem;
+        width: 70rem;
+    }
+    
+    main .segunda h2{
+        font-size: 1.6rem;
+        padding: 1rem 0;
+    }
+    
+    main .segunda p{
+        padding-bottom: 0.4rem;
+        font-size: 1.3rem;
+    }
+    
+    main .segunda span{
+        font-weight: bolder;
+        font-size: 1.3rem;
+        color: black;
+    }
+    
+    main .segunda .imagens{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 65rem;
+    }
+    
+    main .segunda .imagens p{
+        color: white;
+        font-size: 1.4rem;
+        position: relative;
+        top: 90%;
+        left: 40%;
+    }
+    
+    main .segunda .img1{
+        background: black url("imagens/cinqueterre.jpg") no-repeat center/cover;
+        height: 43rem;
+        width: 60rem;
+        margin-left: -.5rem;
+    }
+    
+    main .segunda .container-imagem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 1rem;
+    }
+    
+    main .segunda .container-imagem div{
+        margin: 0.5rem;
+    }
+    
+    main .segunda .img2{
+        background: black url("imagens/newyork.jpg") no-repeat center/cover;
+        height: 20.5rem;
+        width: 15.1rem;
+    }
+    
+    main .segunda .img3{
+        background: black url("imagens/sanfran.jpg") no-repeat center/cover;
+        height: 20.5rem;
+        width: 15.1rem;
+    }
+    
+    main .segunda .img4{
+        background: black url("imagens/pisa.jpg") no-repeat center/cover;
+        height: 20.5rem;
+        width:  15.1rem;
+    }
+    
+    main .segunda .img5{
+        background: black url("imagens/paris.jpg") no-repeat center/cover;
+        height: 20.5rem;
+        width: 15.1rem;
+    }
+    
+    /* Terceira */
+    
+
+    main .terceira{
+        height: 40rem;
+    }
+
+    main .terceira h2{
+        font-size: 1.6rem;
+        padding: 1rem 0;
+    }
+    
+    main .terceira p{
+        padding-bottom: 1rem;
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+    
+    main .terceira > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 63rem;
+        gap: 2rem;
+    }
+    
+    main .terceira img{
+        width: 31rem;
+    }
+    
+    main .terceira .ocean, .mountain{
+        background-color: whitesmoke;
+    }
+    
+    main .terceira > div h2{
+        padding-left: 1rem;
+    }
+    
+    main .terceira > div p {
+        padding-left: 1rem;
+    }
+    
+    
+    main .terceira .indent{
+        padding-left: 2rem;
+    }
+    
+    /* quarta */
+    
+    main .quarta{
+        display: block;
+        margin: 0 4.5rem;
+        background-color: gray;
+        color: white;
+        height: 20rem;
+        width: 64rem;
+    }
+    
+    main .quarta h1{
+        padding: 2rem 0;
+        padding-left: 1rem;
+        font-size: 2rem;
+    }
+    
+    main .quarta > p{
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+    }
+    
+    main .quarta form{
+        padding: 0 1rem;
+    }
+    
+    main .quarta input{
+        width: 92%;
+        padding: 1rem .3rem;
+        margin-bottom: 1rem;
+        border: .1rem solid lightgray;
+    }
+    
+    main .quarta button{
+        background-color: red;
+        border: none;
+        color: white;
+        padding: 1rem 2rem;
+    }
+    
+    main .quarta button:hover{
+        background-color: rgba(255, 0, 0, 0.507);
+    }
+    
+    /* quinta */
+    
+    main .quinta{
+        display: block;
+        margin: 0 auto;
+        padding: 2rem 5rem;
+    }
+    
+    main .quinta svg{
+        width: 3rem;
+        height: 1.5rem;
+    }
+    
+    main .quinta h2{
+        padding: 2rem 0;
+        font-size: 2.5rem;
+    }
+    
+    main .quinta p{
+        padding-bottom: 1.5rem;
+        font-size: 1.2rem;
+    }
+    
+    main .quinta div{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    
+    main .quinta input{
+        display: block;
+        width: 62rem;
+        padding: 1rem 1rem;
+        border: .1rem solid lightgray;
+        margin-bottom: 1rem;
+    }
+    
+    main .quinta button{
+        display: block;
+        padding: 0.8rem;
+        color: white;
+        background-color: black;
+        border: none;
+    }
+    
+    /* Footer */
+    
+    footer{
+        text-align: center;
+    }
+    
+    footer h3{
+        padding: 2rem 0;
+    }
+    
+    footer div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: .5rem;
+        margin-bottom: 1rem;
+    }
+    
+    footer svg{
+        height: 2rem;
+        width: 2rem;
+    }
+    
+    footer p{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    /* Header */
+
+    header > div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+    }
+    
+    header img, svg{
+        width: 5rem;
+        height: 3rem;
+    }
+    
+    header .logo{
+        display: flex;
+        align-items: center;
+        color: red;
+        padding: 1rem 0;
+    }
+    
+    /* Principal */
+    
+    header .principal{
+        display: flex;
+        justify-content: center;
+        background: black url("imagens/london.jpg") no-repeat center/cover;
+        width: 100vw;
+        height: 70vh;
+    }
+    
+    header .principal > div{
+        display: block;
+        margin: auto;
+        background-color:white;
+        width: 50vw;
+    }
+    
+    header .principal nav{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        flex-direction: row;
+        color: white;
+        background-color: black;
+        margin: 0;
+        font-size: 1.6rem;
+    }
+    
+    header .principal a{
+        color: white;
+        background-color: black;
+        padding: 0.8rem 9.3rem;
+    }
+    
+    header .principal a:hover{
+        background-color: red;
+    }
+    
+    header .principal h2{
+        padding: 1rem;
+        font-size: 1.8rem;
+        margin: 0.5rem 0;
+    }
+    
+    header .formulario section{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 1rem;
+        font-size: 1.3rem;
+    }
+    
+    header .formulario .inputs{
+        padding: 0.5rem 2rem;
+        width: 20vw;
+        border: .1rem solid lightgray;
+    
+    }
+    
+    header .formulario button{
+        display: block;
+        margin: 1.6rem 1rem;
+        padding: 0.8rem;
+        color: white;
+        background-color: gray;
+        border: none;
+    }
+    
+    /* Main */
+    
+    main{
+        display: block;
+        margin: auto;
+        width: 100rem;
+    }
+    
+    
+    /* Segunda */
+    
+    main .segunda, .mid{
+        display: block;
+        margin: auto;
+        height: 50rem;
+        width: 106rem;
+    }
+    
+    main .segunda h2{
+        font-size: 1.6rem;
+        padding: 1rem 0;
+    }
+    
+    main .segunda p{
+        padding-bottom: 0.4rem;
+        font-size: 1.3rem;
+    }
+    
+    main .segunda span{
+        font-weight: bolder;
+        font-size: 1.3rem;
+        color: black;
+    }
+    
+    main .segunda .imagens{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 110rem;
+    }
+    
+    main .segunda .imagens p{
+        color: white;
+        font-size: 1.4rem;
+        position: relative;
+        top: 90%;
+        left: 40%;
+    }
+    
+    main .segunda .img1{
+        background: black url("imagens/cinqueterre.jpg") no-repeat center/cover;
+        height: 43rem;
+        width: 72rem;
+    }
+    
+    main .segunda .container-imagem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: -7rem;
+    }
+    
+    main .segunda .container-imagem div{
+        margin: 1rem;
+    }
+    
+    main .segunda .img2{
+        background: black url("imagens/newyork.jpg") no-repeat center/cover;
+        height: 20rem;
+        width: 23.5rem;
+    }
+    
+    main .segunda .img3{
+        background: black url("imagens/sanfran.jpg") no-repeat center/cover;
+        height: 20rem;
+        width: 23.5rem;
+    }
+    
+    main .segunda .img4{
+        background: black url("imagens/pisa.jpg") no-repeat center/cover;
+        height: 20rem;
+        width:  23.5rem;
+    }
+    
+    main .segunda .img5{
+        background: black url("imagens/paris.jpg") no-repeat center/cover;
+        height: 20rem;
+        width: 23.5rem;
+    }
+    
+    /* Terceira */
+    
+    main .terceira h2{
+        font-size: 1.6rem;
+        padding: 1rem 0;
+    }
+    
+    main .terceira p{
+        padding-bottom: 1rem;
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+    
+    main .terceira > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100rem;
+        gap: 2rem;
+    }
+    
+    main .terceira img{
+        width: 49rem;
+    }
+    
+    main .terceira .ocean, .mountain{
+        background-color: whitesmoke;
+    }
+    
+    main .terceira > div h2{
+        padding-left: 1rem;
+    }
+    
+    main .terceira > div p {
+        padding-left: 1rem;
+    }
+    
+    
+    main .terceira .indent{
+        padding-left: 2rem;
+    }
+    
+    /* quarta */
+    
+    main .quarta{
+        display: block;
+        margin: auto;
+        background-color: gray;
+        color: white;
+        height: 20rem;
+        width: 100rem;
+        margin-top: 8rem;
+    }
+    
+    main .quarta h1{
+        padding: 2rem 0;
+        padding-left: 1rem;
+        font-size: 2rem;
+    }
+    
+    main .quarta > p{
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+    }
+    
+    main .quarta form{
+        padding: 0 1rem;
+    }
+    
+    main .quarta input{
+        display: block;
+        width: 95%;
+        padding: 1rem .5rem;
+        margin-bottom: 1rem;
+        border: .1rem solid lightgray;
+    }
+    
+    main .quarta button{
+        background-color: red;
+        border: none;
+        color: white;
+        padding: 1rem 1rem;
+    }
+    
+    main .quarta button:hover{
+        background-color: rgba(255, 0, 0, 0.507);
+    }
+    
+    /* quinta */
+    
+    main .quinta{
+        display: block;
+        margin: auto;
+        padding: 0 0;
+        width: 100%;
+    }
+    
+    main .quinta svg{
+        width: 3rem;
+        height: 1.5rem;
+    }
+    
+    main .quinta h2{
+        padding: 2rem 0;
+        font-size: 2.5rem;
+    }
+    
+    main .quinta p{
+        padding-bottom: 1.5rem;
+        font-size: 1.2rem;
+    }
+    
+    main .quinta div{
+        display: flex;
+        margin-left: -.3rem;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    
+    main .quinta input{
+        display: block;
+        width: 98%;
+        padding: 1rem 1rem;
+        border: .1rem solid lightgray;
+        margin-bottom: 1rem;
+    }
+    
+    main .quinta button{
+        display: block;
+        padding: 0.8rem;
+        color: white;
+        background-color: black;
+        border: none;
+    }
+    
+    /* Footer */
+    
+    footer{
+        text-align: center;
+    }
+    
+    footer h3{
+        padding: 2rem 0;
+    }
+    
+    footer div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: .5rem;
+        margin-bottom: 1rem;
+    }
+    
+    footer svg{
+        height: 2rem;
+        width: 2rem;
+    }
+    
+    footer p{
+        margin-bottom: 1rem;
+    }
+}
+
