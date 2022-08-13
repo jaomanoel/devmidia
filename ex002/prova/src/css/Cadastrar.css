@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.Cadastro{
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.Cadastro form{
+    width: 80%;
+}
+
+.Cadastro input, textarea{
+    display: block;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    padding: .5rem;
+    width: 100%;
+    resize: none;
+    word-break:keep-all;
+}
+
+.Cadastro textarea{
+    height: 10rem;
+}
+
+.Cadastro input:focus, textarea:focus{
+    outline: none;
+}
+
+.Cadastro Button{
+    display: block;
+    margin: .5rem auto;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+}

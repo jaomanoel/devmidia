@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-shadow: none;
+  border: none;
+}
+
+html{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+body{
+  background-color: rgb(229, 226, 226);
+}
+
+.sr-only{
+  /*
+  Esconder na tela mais ficar ali para acessibilidade
+  */
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Header */
+
+@media screen and (min-width: 870px ) {
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0;
+    background-color: lightgray;
+  }
+  
+  header > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+  }
+  
+  header .header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header .header-nav a{
+    font-size: 1.2rem;
+    color: black;
+    margin-right: 3rem;
+  }
+  
+  header .header-nav form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5rem;
+    padding: .5rem;
+    width: 20rem;
+  }
+  
+  header .header-nav form input{
+    background-color: transparent;
+    width: 90%;
+  }
+  
+  header .header-nav form input:focus{
+    outline: none;
+  }
+  
+  header .header-nav form button{
+    background-color: transparent;
+  }
+
+  header .navResponsive {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}
+
+
+@media screen and (max-width: 870px) {
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0;
+    background-color: lightgray;
+  }
+  
+  header > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+  }
+  
+  header .header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+  }
+  
+  header .header-nav a{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  header .header-nav form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5rem;
+    padding: .5rem;
+    width: 20rem;
+  }
+  
+  header .header-nav form input{
+    background-color: transparent;
+    width: 100%;
+  }
+  
+  header .header-nav form input:focus{
+    outline: none;
+  }
+  
+  header .header-nav form button{
+    background-color: transparent;
+  }
+
+  header .navResponsive{
+    margin-left: -80px;
+  }
+
+  header .navResponsive label{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  header .navResponsive label div{
+    display: block;
+    cursor: pointer;
+    height: 5px;
+    width: 30px;
+    border-radius: 30px;
+    margin: 2px;
+    background-color: black;
+  }
+
+  header .navResponsive .menu{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 8%;
+    left: 0;
+    background-color: rgb(146, 145, 145);
+    opacity: 0;
+  }
+
+  header .navResponsive .menu ul{
+    list-style-type: none;
+    text-align: center;
+  }
+
+  header .navResponsive .menu ul li{
+    padding: 10px 0px;
+    border-bottom: 1px solid black;
+  }
+
+  header .navResponsive .menu a{
+    font-size: 16px;
+    padding: 10px;
+    color: black;
+  }
+
+  header .navResponsive .menu a:hover{
+    color: blue;
+  }
+
+  header .navResponsive label #linha1{
+    transition: transform .1s ease;
+  }
+
+  header .navResponsive label #linha2{
+    transition: opacity .1s ease;
+  }
+
+  header .navResponsive label #linha3{
+    transition: transform .1s ease;
+  }
+
+  header .navResponsive input{
+    opacity: 0;
+    position: absolute;
+  }
+
+  #checkbox-menu:checked ~ label #linha1{
+    transform: rotate(45deg) translateX(10px);
+    margin: 0;
+  }
+
+  #checkbox-menu:checked ~ label #linha2{
+    opacity: 0;
+  }
+
+  #checkbox-menu:checked ~ label #linha3{
+    transform: rotate(-45deg) translateX(10px);
+    margin: 0;
+  }
+
+  #checkbox-menu:checked ~ .menu{
+    display: block;
+    opacity: 1;
+    height: 78px;
+  }
+
+  
+}
+/* Footer */
+
+footer{
+  position: fixed;
+  top: 93%;
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: lightgray;
+  width: 100%;
+}
