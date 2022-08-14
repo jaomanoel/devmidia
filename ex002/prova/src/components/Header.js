@@ -14,7 +14,7 @@ const Header = () => {
     const handleSearch = (e) => {
         e.preventDefault();
         
-        Axios.get("http://localhost:3001/pesquisa/" + search.pesquisa
+        Axios.get("https://quiet-crag-18542.herokuapp.com/pesquisa/" + search.pesquisa
         ).then((response) => {
             setListSearch(response.data)
         }

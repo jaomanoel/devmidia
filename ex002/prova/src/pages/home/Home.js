@@ -11,7 +11,7 @@ const Home = () =>{
 
     console.log(listSearch)
     useEffect(() => {
-        Axios.get("http://localhost:3001/").then((response) => { 
+        Axios.get("https://quiet-crag-18542.herokuapp.com/").then((response) => { 
             setListGames(response.data); 
         });
     }, []);
