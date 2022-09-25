@@ -175,7 +175,9 @@ body{
         font-size: 1.4rem;
         position: relative;
         top: 90%;
-        left: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
     }
     
     main .segunda .img1{
@@ -566,7 +568,9 @@ body{
         font-size: 1.4rem;
         position: relative;
         top: 90%;
-        left: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
     }
     
     main .segunda .img1{
@@ -798,7 +802,7 @@ body{
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1366px) {
+@media screen and (min-width: 768px) and (max-width: 1300px) {
     /* Header */
 
     header > div{
@@ -935,7 +939,9 @@ body{
         font-size: 1.4rem;
         position: relative;
         top: 90%;
-        left: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
     }
     
     main .segunda .img1{
@@ -1145,7 +1151,7 @@ body{
     }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1300px) {
     /* Header */
 
     header > div{
@@ -1181,7 +1187,7 @@ body{
         display: block;
         margin: auto;
         background-color:white;
-        width: 50vw;
+        width: 40%;
     }
     
     header .principal nav{
@@ -1193,12 +1199,15 @@ body{
         background-color: black;
         margin: 0;
         font-size: 1.6rem;
+        width: 100%;
     }
     
     header .principal a{
         color: white;
         background-color: black;
-        padding: 0.8rem 9.3rem;
+        padding: 0.8rem 0;
+        width: 33.5%;
+        text-align: center;
     }
     
     header .principal a:hover{
@@ -1282,7 +1291,9 @@ body{
         font-size: 1.4rem;
         position: relative;
         top: 90%;
-        left: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
     }
     
     main .segunda .img1{
